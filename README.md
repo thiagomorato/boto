@@ -107,14 +107,14 @@ This package provides basically 3 simple functions:
 It creates a layer of neuron parameters, which is basically an array of `{ weights: [], bias }`. 
 Important to note that a combination of the layers returned by this function shapes the neural network.
 
-##### Arguments
+#### Arguments
 
 `amountOfNeurons`: The amount of neurons a layer will contain.
 
 `amountOfInputs`: The amount of inputs each neuron will take, on the first layer it is the amount of 
 input you have, on the following it should be the amount of neurons from the previous layer.
 
-##### Return
+#### Return
 
 An array of `{ weights: [], bias }`
 
@@ -128,7 +128,7 @@ One important thing to note here, since the project tried to follow functional p
 if you set 10k epochs it will crash given the maximum call stack size, if you need that many epochs 
 for whatever reason consider using `trainNeuralNetworkEpoch` inside a normal loop. 
 
-##### Arguments
+#### Arguments
 
 `trainData`: The training set, an array of objects like: `{ input: [], output: [] }`. Note that the input and 
 output needs to arrays.
@@ -145,7 +145,7 @@ you need to play with it but starting with 1 is a good place.
 as arguments so you can keep track of you network and also do sample test with the new parameters to see how it is
 evolving.
 
-##### Return
+#### Return
 
 An new set of parameters, with error reduced.
 
@@ -153,31 +153,31 @@ An new set of parameters, with error reduced.
 This is the function that once you have trained parameters can be used to give the answers you need. Basically it
 runs the neural network calculations over the layers and returns the activations of the last layer.
 
-##### Arguments
+#### Arguments
 `input`: One input, note that a single input is an Array with the input values.
 
 `parameters`: The parameters to perform the calculations.
 
-##### Return
+#### Return
 The neural network output, which is an Array, even if the last layer contains only one neuron.
 
 ### trainNeuralNetworkEpoch()
 Trains the neural network over the whole training set, but just once.
 
-##### Arguments
+#### Arguments
 `trainData`: The training set, as in `trainNeuralNetworkEpochs`.
 
 `parameters`: The parameters to perform the calculations.
 
 `learningRate`: The learning rate.
 
-##### Return
+#### Return
 An new set of parameters, with error reduced.
 
 ### trainNeuralNetwork()
 Trains the neural network for a single example. 
 
-##### Arguments
+#### Arguments
 `inputValues`: A single example input, which is an Array with many input numbers.
 
 `parameters`: The parameters to perform the calculations.
@@ -186,7 +186,7 @@ Trains the neural network for a single example.
 
 `learningRate`: The learning rate.
 
-##### Return
+#### Return
 An new set of parameters, with error reduced.
 
 ## Resources that contributed to this project
