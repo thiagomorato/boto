@@ -1,6 +1,6 @@
-# Boto 
+# Boto Neural Network
 
-This is a side project created in a week on spare time with the intent to learn 
+This is a JavaScript side project created in a week on spare time with the intent to learn 
 how neural networks works on the inside. The kind of neural network implemented here 
 is the online gradient descent using sigmoid as activation function. It 
 was created trying to follow the functional programming principles, but 
@@ -41,12 +41,20 @@ Checkout the `demos/handwritten-digis` folder, there is the source files for thi
 handwritten recognition implementation. 
 
 ## Use it on your projects
+
+You can install it using npm:
+```
+npm install boto-neural-network
+```
+
+A simple demonstration:
+
 ```js
 const {
     makeLayerWithRandomParameters,
     trainNeuralNetworkEpochs,
     runNeuralNetwork
-  } = require( '../../src/neural-network' );
+  } = require( 'boto-neural-network' );
 
 // creating the problem
 function isFirstBiggerThanSecondSquared( numberA, numberB ) {
