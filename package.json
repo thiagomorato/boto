@@ -1,6 +1,6 @@
 {
   "name": "boto-neural-network",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A JavaScript implementation of an online gradient descent neural network.",
   "main": "src/neural-network.js",
   "scripts": {
