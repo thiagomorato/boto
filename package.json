@@ -1,0 +1,31 @@
+{
+  "name": "Boto",
+  "version": "0.0.1",
+  "description": "A JavaScript implementation of an online gradient descent neural network.",
+  "main": "index.js",
+  "scripts": {
+    "simple": "node demos/simple",
+    "proof": "node demos/handwritten-digits --proof",
+    "train": "node demos/handwritten-digits --train"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thiagomorato/boto"
+  },
+  "keywords": [
+    "online",
+    "neural",
+    "network",
+    "incremental",
+    "learning",
+    "functional",
+    "programming"
+  ],
+  "author": "Thiago Morato",
+  "license": "MIT",
+  "devDependencies": {
+    "chalk": "^2.4.2",
+    "command-line-args": "^5.1.1",
+    "mnist": "^1.1.0"
+  }
+}
