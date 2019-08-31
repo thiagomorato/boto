@@ -16,7 +16,7 @@ are we coding shark machines or boto machines?
 
 ## Recognizing handwritten digits
 
-[ image ]()
+![boto-proof](https://user-images.githubusercontent.com/6374422/64067375-ecb59b80-cbfd-11e9-899f-92ffc8467d67.gif)
 
 This seems to be the most classical initial project on neural networks and it was quite fun to do and see it working.
 The trained parameters on `demos/handwritten-digits/parameters` provides a 97.6% accuracy, 
