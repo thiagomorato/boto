@@ -13,7 +13,6 @@ and displaying personalized and intrusive ads is something machine learning need
 With machine learning reshaping how we live and work the question inevitable to ask is:
 are we coding shark machines or boto machines?
 
-
 ## Recognizing handwritten digits
 
 ![boto-proof](https://user-images.githubusercontent.com/6374422/64067375-ecb59b80-cbfd-11e9-899f-92ffc8467d67.gif)
@@ -24,6 +23,8 @@ to get there it ran for 3 hours with 8000 training set. A next step will be to t
 probably do it on the cloud.
 
 ### See it alive 
+
+Clone the project and:
 ```
 npm run proof
 npm run proof { path to parameters file } { time between proofs in ms }
@@ -39,6 +40,10 @@ npm run train { training set size } { testing set size } { amount of epochs }
 
 Checkout the `demos/handwritten-digis` folder, there is the source files for this 
 handwritten recognition implementation. 
+
+
+Important to mention that this is a demo of the project, not the project itself. The neural network is what is
+inside the `src` folder and the main file is `src/neural-network.js`.
 
 ## Use it on your projects
 
